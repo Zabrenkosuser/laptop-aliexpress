@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבים ניידים למכירה</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>מחשבים ניידים למכירה</h1>
+        <div class="sort-options">
+            <div class="dropdown">
+                <button class="dropbtn">מיין לפי מחיר לאחר הנחה</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="sortProducts('discountPrice', 'asc')">מהנמוך לגבוה</a>
+                    <a href="#" onclick="sortProducts('discountPrice', 'desc')">מהגבוה לנמוך</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">מיין לפי מחיר לפני הנחה</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="sortProducts('originPrice', 'asc')">מהנמוך לגבוה</a>
+                    <a href="#" onclick="sortProducts('originPrice', 'desc')">מהגבוה לנמוך</a>
+                </div>
+            </div>
+        </div>
+        <div id="products" class="products-grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
